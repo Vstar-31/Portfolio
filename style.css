@@ -824,6 +824,7 @@ html {
   background: var(--color-background);
   position: relative;
   overflow: hidden;
+  padding-top: 70px; /* To offset fixed header */
 }
 
 .hero__background {
@@ -907,10 +908,14 @@ html {
 }
 
 /* Section styles */
+section {
+  padding: 80px 0;
+}
+
 .section-header {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto var(--space-32) auto;
+  margin: 0 auto 60px auto;
 }
 
 .section-title {
@@ -930,7 +935,6 @@ html {
 
 /* About Section */
 .about {
-  padding: var(--space-32) 0;
   background: var(--color-surface);
 }
 
@@ -973,26 +977,16 @@ html {
 }
 
 .about__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
-.about__image-placeholder {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: var(--gradient-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-glow);
-}
-
-.about__image-icon {
-  font-size: 4rem;
-  font-weight: var(--font-weight-bold);
-  color: white;
+.about__image-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--color-border);
+    position: relative;
+    z-index: 2;
 }
 
 .text-secondary {
@@ -1001,7 +995,6 @@ html {
 
 /* Skills Section */
 .skills {
-  padding: var(--space-32) 0;
   background: var(--color-background);
 }
 
@@ -1093,13 +1086,12 @@ html {
 
 /* Projects Section */
 .projects {
-  padding: var(--space-32) 0;
   background: var(--color-surface);
 }
 
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: var(--space-32);
 }
 
@@ -1110,6 +1102,8 @@ html {
   padding: var(--space-24);
   transition: transform var(--duration-normal) var(--ease-standard),
               box-shadow var(--duration-normal) var(--ease-standard);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -1133,6 +1127,7 @@ html {
   justify-content: center;
   background: var(--gradient-primary);
   border-radius: var(--radius-md);
+  flex-shrink: 0;
 }
 
 .project-card__meta {
@@ -1156,6 +1151,7 @@ html {
   color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: var(--space-16);
+  flex-grow: 1;
 }
 
 .project-card__tech {
@@ -1167,8 +1163,8 @@ html {
 
 .tech-tag {
   padding: var(--space-4) var(--space-12);
-  background: var(--color-primary);
-  color: white;
+  background: rgba(var(--color-primary-rgb, 59, 130, 246), 0.2);
+  color: var(--color-primary);
   border-radius: var(--radius-full);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
@@ -1208,11 +1204,11 @@ html {
 .project-card__actions {
   display: flex;
   gap: var(--space-12);
+  margin-top: auto;
 }
 
-/* Achievements Section */
+/* Achievements & Experience Section */
 .achievements {
-  padding: var(--space-32) 0;
   background: var(--color-background);
 }
 
@@ -1270,8 +1266,7 @@ html {
   content: '';
   position: absolute;
   left: -41px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 15px;
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
@@ -1298,7 +1293,7 @@ html {
   margin: 0 0 var(--space-12) 0;
 }
 
-.achievement-item__description {
+.achievement-item__description, .achievement-item__content ul {
   color: var(--color-text-secondary);
   line-height: 1.6;
   margin: 0;
@@ -1306,7 +1301,6 @@ html {
 
 /* Contact Section */
 .contact {
-  padding: var(--space-32) 0;
   background: var(--color-surface);
 }
 
@@ -1479,9 +1473,8 @@ html {
     order: -1;
   }
   
-  .about__image-placeholder {
-    width: 200px;
-    height: 200px;
+  .about__image-img {
+    max-width: 250px;
   }
   
   .skills__grid {

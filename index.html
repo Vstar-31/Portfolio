@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijay Shankar - AI & Machine Learning Engineer</title>
+    <title>Vijay Shankar - Software Developer & AI Enthusiast</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,6 +16,7 @@
             <div class="nav__links">
                 <a href="#home" class="nav__link">Home</a>
                 <a href="#about" class="nav__link">About</a>
+                <a href="#experience" class="nav__link">Experience</a>
                 <a href="#skills" class="nav__link">Skills</a>
                 <a href="#projects" class="nav__link">Projects</a>
                 <a href="#achievements" class="nav__link">Achievements</a>
@@ -42,7 +43,7 @@
                 <h1 class="hero__title">
                     <span class="hero__title-text">Vijay Shankar</span>
                 </h1>
-                <h2 class="hero__subtitle">AI & Machine Learning Engineer</h2>
+                <h2 class="hero__subtitle">Software Developer & AI Enthusiast</h2>
                 <p class="hero__tagline">Passionate about building intelligent solutions that solve real-world problems</p>
                 <div class="hero__cta">
                     <a href="#projects" class="btn btn--primary">View My Work</a>
@@ -67,8 +68,7 @@
                         <div class="about__detail">
                             <h4>Education</h4>
                             <p><strong>JECRC University, Jaipur</strong><br>
-                            Bachelor of Technology in Computer Science<br>
-                            (Artificial Intelligence and Machine Learning)<br>
+                            B.Tech in Computer Science (AI & ML)<br>
                             <span class="text-secondary">July 2023 – August 2027</span></p>
                         </div>
                         <div class="about__detail">
@@ -81,9 +81,37 @@
                         </div>
                     </div>
                 </div>
-                    <div class="about__image" style="width: 350px; height: 500px;">
-                        <div class="about__image-bg"></div>
+                <div class="about__image" style="width: 350px; height: 500px;">
+                    <div class="about__image-bg"></div>
                     <img src="about_pic.JPG" alt="A picture of me" class="about__image-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="achievements" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey in the industry so far</p>
+            </div>
+            <div class="achievements__timeline">
+                <div class="achievement-item">
+                    <div class="achievement-item__date">June 2025 – Sept 2025</div>
+                    <div class="achievement-item__content">
+                        <div class="achievement-item__icon">💻</div>
+                        <h3 class="achievement-item__title">Software Developer Intern</h3>
+                        <p class="achievement-item__organization">3 Handshake Private Ltd, Jaipur</p>
+                        <div class="project-card__features">
+                             <ul>
+                                <li>Designed a production-ready AI chatbot achieving 90% accuracy using SBERT and TF-IDF models.</li>
+                                <li>Built a bilingual conversation system (English/Hindi) with speech-to-text and automated escalation.</li>
+                                <li>Architected an admin dashboard with real-time dataset management and Gemini API training pipelines.</li>
+                                <li>Engineered a SQL to PostgreSQL migration with Flask/SQLAlchemy for scalable data management.</li>
+                                <li>Developed a CRM reminder scheduler using NLP for automated, role-based task generation.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,58 +128,47 @@
             <div class="skills__content">
                 <div class="skills__category">
                     <h3 class="skills__category-title">Programming Languages</h3>
-                    <div class="skills__grid">
-                        <div class="skill-item">
-                            <div class="skill-item__icon">🐍</div>
-                            <h4>Python</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-item__icon">⚡</div>
-                            <h4>C++</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-item__icon">🌐</div>
-                            <h4>JavaScript</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-item__icon">🔧</div>
-                            <h4>C</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-item__icon">🗄️</div>
-                            <h4>SQL</h4>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">R</span>
                     </div>
                 </div>
                 <div class="skills__category">
-                    <h3 class="skills__category-title">Tools & Technologies</h3>
+                    <h3 class="skills__category-title">AI/ML & Data Science</h3>
                     <div class="skills__tags">
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">PyCharm</span>
-                        <span class="skill-tag">IBM Watson Studio</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">NumPy</span>
                         <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Data Science</span>
-                        <span class="skill-tag">AI</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">SBERT</span>
+                        <span class="skill-tag">TF-IDF</span>
+                        <span class="skill-tag">spaCy</span>
+                        <span class="skill-tag">TextBlob</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Frameworks, Libraries & Databases</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Developer Tools</h3>
+                    <div class="skills__tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">PyCharm</span>
                     </div>
                 </div>
             </div>
@@ -168,26 +185,28 @@
             <div class="projects__grid">
                 <div class="project-card">
                     <div class="project-card__header">
-                        <div class="project-card__icon">🌤️</div>
+                        <div class="project-card__icon">🤖</div>
                         <div class="project-card__meta">
-                            <h3 class="project-card__title">Weather App</h3>
-                            <p class="project-card__date">March 2025</p>
+                            <h3 class="project-card__title">ApnaBackup AI Customer Support Chatbot</h3>
+                            <p class="project-card__date">2025</p>
                         </div>
                     </div>
-                    <p class="project-card__description">Developed a comprehensive Weather Application leveraging Python libraries to fetch real-time weather conditions, including temperature, humidity, wind speed, and atmospheric conditions, within an interactive user interface.</p>
+                    <p class="project-card__description">A bilingual AI chatbot designed for customer support, featuring intelligent ticket escalation and a dynamic admin panel for dataset management.</p>
                     <div class="project-card__tech">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenWeather API</span>
-                        <span class="tech-tag">GUI</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">SBERT</span>
                     </div>
                     <div class="project-card__features">
                         <h4>Key Features:</h4>
                         <ul>
-                            <li>Real-time weather data fetching</li>
-                            <li>Interactive user interface</li>
-                            <li>Global city search functionality</li>
-                            <li>Robust error handling</li>
-                            <li>API integration</li>
+                            <li>Bilingual support using SBERT embeddings and TF-IDF.</li>
+                            <li>Intelligent escalation with automatic support ticket generation.</li>
+                            <li>React-based UI with light/dark mode and persistent chat history.</li>
+                            <li>Admin panel for dynamic dataset management and analytics.</li>
                         </ul>
                     </div>
                     <div class="project-card__actions">
@@ -196,26 +215,54 @@
                 </div>
                 <div class="project-card">
                     <div class="project-card__header">
-                        <div class="project-card__icon">⚡</div>
+                        <div class="project-card__icon">📈</div>
                         <div class="project-card__meta">
-                            <h3 class="project-card__title">Pikachu Run</h3>
-                            <p class="project-card__date">January 2025</p>
+                            <h3 class="project-card__title">Remark Notifier CRM System</h3>
+                            <p class="project-card__date">2025</p>
                         </div>
                     </div>
-                    <p class="project-card__description">Engineered an engaging endless runner game featuring Pikachu as the main character with fluid movement mechanics and precise jump physics, creating an immersive gaming experience.</p>
+                    <p class="project-card__description">A CRM system that automates sales pipelines using NLP for intent recognition, featuring role-based workflows and a real-time analytics dashboard.</p>
                     <div class="project-card__tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Chart.js</span>
                     </div>
                     <div class="project-card__features">
                         <h4>Key Features:</h4>
                         <ul>
-                            <li>Fluid movement mechanics</li>
-                            <li>Procedurally generated obstacles</li>
-                            <li>Progressive difficulty progression</li>
-                            <li>Collision detection algorithms</li>
-                            <li>Responsive UI design</li>
+                            <li>Sales pipeline automation with NLP for over 20+ stages.</li>
+                            <li>Role-based workflow for different user types (Sales Persons, Experts).</li>
+                            <li>Real-time analytics dashboard with interactive charts.</li>
+                            <li>Smart email notifications with HTML templates.</li>
+                        </ul>
+                    </div>
+                    <div class="project-card__actions">
+                        <a href="https://github.com/Vstar-31" target="_blank" class="btn btn--sm btn--outline">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">🌤️</div>
+                        <div class="project-card__meta">
+                            <h3 class="project-card__title">Real-Time Weather Application</h3>
+                            <p class="project-card__date">2025</p>
+                        </div>
+                    </div>
+                    <p class="project-card__description">Developed a comprehensive Weather Application leveraging Python libraries to fetch real-time weather conditions for any city in the world.</p>
+                    <div class="project-card__tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenWeather API</span>
+                        <span class="tech-tag">GUI</span>
+                    </div>
+                    <div class="project-card__features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Real-time weather data fetching from OpenWeather API.</li>
+                            <li>Interactive user interface to search for any city.</li>
+                            <li>Displays temperature, humidity, wind speed, and conditions.</li>
+                            <li>Robust error handling for invalid inputs and API issues.</li>
                         </ul>
                     </div>
                     <div class="project-card__actions">
@@ -247,18 +294,18 @@
                     <div class="achievement-item__date">February 2024</div>
                     <div class="achievement-item__content">
                         <div class="achievement-item__icon">🏆</div>
-                        <h3 class="achievement-item__title">ESummit IIT Bombay - 1st Place Overall</h3>
-                        <p class="achievement-item__organization">IIT Bombay</p>
-                        <p class="achievement-item__description">Contributed to the NEC Team's victory, securing 1st place overall in the National Entrepreneurship Challenge (NEC) 2024 Finals at IIT Bombay. Actively participated in business strategy and negotiation events, including FishTank, IPL Auction, Nexus of Ingenuity.</p>
+                        <h3 class="achievement-item__title">NEC 2024 Winning Team Member</h3>
+                        <p class="achievement-item__organization">IIT Bombay E-Summit '24</p>
+                        <p class="achievement-item__description">Secured 1st place overall representing JECRC University in the National Entrepreneurship Challenge (NEC) 2024 Finals at IIT Bombay. Actively participated in business strategy and negotiation events.</p>
                     </div>
                 </div>
                 <div class="achievement-item">
-                    <div class="achievement-item__date">December 2024</div>
+                    <div class="achievement-item__date">2024</div>
                     <div class="achievement-item__content">
                         <div class="achievement-item__icon">💡</div>
                         <h3 class="achievement-item__title">Smart India Hackathon 2024 - Top 20</h3>
-                        <p class="achievement-item__organization">JECRC University</p>
-                        <p class="achievement-item__description">Ranked in the Top 20 teams (Round 2) of Smart India Hackathon 2024, competing at university level. Developed a research paper analysis tool to assist faculty members and researchers by automating key data extraction through advanced web scraping techniques.</p>
+                        <p class="achievement-item__organization">JECRC University Level</p>
+                        <p class="achievement-item__description">Ranked in the Top 20 teams of Smart India Hackathon 2024 at the university level. Developed a research paper analysis tool to assist faculty by automating key data extraction through web scraping.</p>
                     </div>
                 </div>
             </div>
