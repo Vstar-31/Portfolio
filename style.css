@@ -1961,3 +1961,55 @@ html {
         padding-right: 0.7rem;
     }
 }
+.navbar {
+  background: #21808d;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 0 2px 18px rgba(33,128,141,0.11);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.nav-logo a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.12rem;
+  text-decoration: none;
+  letter-spacing: .03em;
+}
+.nav-menu {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+  transition: color 0.12s;
+}
+.nav-item a:hover, .nav-item a.active {
+  color: #fcfcf9;
+  text-shadow: 0 0 8px #29a5b8cc;
+}
+.hamburger { display: none; }
+@media (max-width: 860px) {
+  .nav-menu { gap: 1.3rem; }
+}
+@media (max-width: 600px) {
+  .nav-container { flex-direction: column; padding: 0.7rem 0;}
+  .navbar { padding: 0.2rem 0.7rem;}
+  .nav-menu { flex-direction: column; gap: 0.8rem;}
+}
