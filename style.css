@@ -1052,6 +1052,36 @@ section {
   color: var(--text-secondary);
 }
 
+/* CV Section */
+.cv {
+  background: var(--color-background);
+}
+
+.cv__content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: var(--space-32);
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.cv__description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: 1.7;
+  margin-bottom: var(--space-24);
+}
+
+.cv__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-16);
+  flex-wrap: wrap;
+}
+
 /* Skills Section */
 .skills {
   background: var(--color-background);
@@ -1568,6 +1598,18 @@ section {
   
   .projects__grid {
     grid-template-columns: 1fr;
+  }
+
+  .cv__content {
+    padding: var(--space-24);
+  }
+
+  .cv__actions {
+    flex-direction: column;
+  }
+
+  .cv__actions .btn {
+    width: 100%;
   }
   
   .achievement-item {
