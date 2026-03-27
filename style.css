@@ -801,6 +801,24 @@ html {
   width: 100%;
 }
 
+.nav__link--cta {
+  background: var(--gradient-primary);
+  color: #ffffff;
+  padding: var(--space-8) var(--space-12);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow-glow);
+}
+
+.nav__link--cta:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.nav__link--cta::after {
+  display: none;
+}
+
 .nav__mobile-toggle {
   display: none;
   flex-direction: column;
@@ -1449,6 +1467,11 @@ section {
 @media (max-width: 768px) {
   .nav__links {
     display: none;
+  }
+
+  .nav__link--cta {
+    width: 100%;
+    text-align: center;
   }
   
   .nav__mobile-toggle {
